@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Muzzamil Anwar | Frontend Developer and E-Commerce Specialist Portfolio">
+    <meta name="keywords" content="frontend, developer, web design, e-commerce, portfolio, React, JavaScript">
+    <meta name="author" content="Muzzamil Anwar">
+    <meta name="theme-color" content="#121212">
+    <meta property="og:title" content="Muzzamil Anwar | Portfolio">
+    <meta property="og:description" content="Frontend Developer and E-Commerce Specialist based in Pakistan">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://muzzamil-anwar.com">
+    <meta property="og:image" content="https://muzzamil-anwar.com/profile.jpg">
+    <title>Muzzamil Anwar | Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            try {
+                emailjs.init("pk_live_pVRgTwc7ZTa5DYQ1pN9N14C83J0KQO06vMpPYzbCJI3bKcNRJGAjgpesRGE1ATvb");
+                console.log("EmailJS initialized successfully in head");
+            } catch (error) {
+                console.error("EmailJS initialization error in head:", error);
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">Muzzamil Anwar</div>
+            <div class="theme-switch-wrapper" id="desktop-theme-toggle">
+                <span class="theme-icon"><i class="fas fa-moon"></i></span>
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="theme-icon"><i class="fas fa-sun"></i></span>
+            </div>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <!-- Theme toggle will be moved here via JavaScript on mobile -->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Side Navigation Dots -->
+    <div class="side-nav">
+        <ul>
+            <li><a href="#home" class="active"></a></li>
+            <li><a href="#skills"></a></li>
+            <li><a href="#experience"></a></li>
+            <li><a href="#projects"></a></li>
+            <li><a href="#contact"></a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero fade-in">
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeInLeft">
+                <h1>Nice to meet you!<br>I'm <span class="highlight animate__animated animate__pulse animate__infinite animate__slow">Muzzamil Anwar</span>.</h1>
+                <p>A Frontend Developer and E-Commerce Specialist based in Pakistan with a passion for creating beautiful, functional, and user-centered digital experiences.</p>
+                <div class="hero-details">
+                    <p>Currently working as a freelance developer focused on creating impactful web experiences.</p>
+                    <a href="#contact" class="cta-button animate__animated animate__pulse animate__infinite animate__slow">Contact me</a>
+                </div>
+            </div>
+            <div class="hero-image animate__animated animate__fadeInRight">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2k_Au_jJGfvqeaMcBZMfpiJRmycuF_LkhRw&s" alt="Muzzamil Anwar" class="profile-image tilt-effect">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills fade-in">
+        <div class="container">
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInUp">Skills.</h2>
+            <div class="skills-container">
+                <div class="skill-row animate-on-scroll" data-animation="animate__fadeInLeft">
+                    <div class="skill-item" data-i="0">
+                        <span>HTML</span>
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-i="1">
+                        <span>CSS</span>
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-i="2">
+                        <span>JavaScript</span>
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-i="3">
+                        <span>React.js</span>
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-row animate-on-scroll" data-animation="animate__fadeInRight">
+                    <div class="skill-item" data-i="4">
+                        <span>Tailwind CSS</span>
+                        <div class="skill-icon">
+                            <i class="fab fa-css3"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-i="5">
+                        <span>Next.js</span>
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-i="6">
+                        <span>Shopify</span>
+                        <div class="skill-icon">
+                            <i class="fab fa-shopify"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-i="7">
+                        <span>WooCommerce</span>
+                        <div class="skill-icon">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-row animate-on-scroll" data-animation="animate__fadeInLeft">
+                    <div class="skill-item" data-i="8">
+                        <span>UI/UX</span>
+                        <div class="skill-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-i="9">
+                        <span>OpenAI</span>
+                        <div class="skill-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-i="10">
+                        <span>API Integration</span>
+                        <div class="skill-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-i="11">
+                        <span>Responsive Design</span>
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav skills-nav">
+                <div class="carousel-dots skills-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience fade-in">
+        <div class="container">
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInUp">Experience.</h2>
+            <div class="experience-grid">
+                <div class="timeline-item fade-in animate-on-scroll" data-animation="animate__fadeInLeft">
+                    <div class="timeline-content tilt-effect-light">
+                        <h3>Frontend Developer</h3>
+                        <p class="timeline-company">Nextpak Agile Solutions, Islamabad</p>
+                        <p class="timeline-period">2022 - 2025</p>
+                        <ul>
+                            <li>Built responsive interfaces with React & Tailwind CSS</li>
+                            <li>Worked on multiple e-commerce web applications</li>
+                            <li>Created custom shopify themes and plugins</li>
+                            <li>Optimized websites for performance and SEO</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in animate-on-scroll" data-animation="animate__fadeInRight">
+                    <div class="timeline-content tilt-effect-light">
+                        <h3>Senior Frontend Developer</h3>
+                        <p class="timeline-company">Nextpak Agile Solutions, Islamabad</p>
+                        <p class="timeline-period">2022 - 2025</p>
+                        <ul>
+                            <li>Developed custom websites for small businesses</li>
+                            <li>Built responsive layouts using modern CSS techniques</li>
+                            <li>Created interactive elements using vanilla JavaScript</li>
+                            <li>Integrated APIs for dynamic content</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in animate-on-scroll" data-animation="animate__fadeInLeft">
+                    <div class="timeline-content tilt-effect-light">
+                        <h3>E-Commerce Development Intern</h3>
+                        <p class="timeline-company">Skilled Score Internships</p>
+                        <p class="timeline-period">2022 - 2025</p>
+                        <ul>
+                            <li>Assisted in developing e-commerce components</li>
+                            <li>Worked with Shopify and WooCommerce platforms</li>
+                            <li>Contributed to client e-commerce projects</li>
+                            <li>Learned e-commerce best practices</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in animate-on-scroll" data-animation="animate__fadeInRight">
+                    <div class="timeline-content tilt-effect-light">
+                        <h3>AI Chatbot Integration Intern</h3>
+                        <p class="timeline-company">Skilled Score Internships</p>
+                        <p class="timeline-period">2022 - 2025</p>
+                        <ul>
+                            <li>Implemented AI chatbot solutions for clients</li>
+                            <li>Worked with OpenAI and custom assistant platforms</li>
+                            <li>Integrated chatbots with client websites</li>
+                            <li>Optimized chatbot responses for better user experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav experience-nav">
+                <div class="carousel-dots experience-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects fade-in">
+        <div class="container">
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInUp">Projects.</h2>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll" data-animation="animate__zoomIn" data-project="grade-calculator">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Student Grade Calculator">
+                    </div>
+                    <div class="project-content">
+                        <h3>Student Grade Calculator</h3>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-animation="animate__zoomIn" data-project="nav-scroll">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1481887328591-3e277f9473dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Slide Down Navigation Bar">
+                    </div>
+                    <div class="project-content">
+                        <h3>Slide Down Navigation Bar</h3>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-animation="animate__zoomIn" data-project="bmi-calculator">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="BMI Calculator">
+                    </div>
+                    <div class="project-content">
+                        <h3>BMI Calculator</h3>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-animation="animate__zoomIn" data-project="toast-notification">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Toast Notification">
+                    </div>
+                    <div class="project-content">
+                        <h3>Toast Notification</h3>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-animation="animate__zoomIn" data-project="internet-speed">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Internet Speed Test">
+                    </div>
+                    <div class="project-content">
+                        <h3>Internet Speed Test</h3>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-animation="animate__zoomIn" data-project="tip-calculator">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tip Calculator">
+                    </div>
+                    <div class="project-content">
+                        <h3>Tip Calculator</h3>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-animation="animate__zoomIn" data-project="analog-clock">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Analog Clock">
+                    </div>
+                    <div class="project-content">
+                        <h3>Analog Clock</h3>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-animation="animate__zoomIn" data-project="payroll">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pay Role Management">
+                    </div>
+                    <div class="project-content">
+                        <h3>Pay Role Management</h3>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-animation="animate__zoomIn" data-project="parallax">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mousemove Parallax Effects">
+                    </div>
+                    <div class="project-content">
+                        <h3>Mousemove Parallax Effects</h3>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-animation="animate__zoomIn" data-project="text-to-speech">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Text to Speech Converter">
+                    </div>
+                    <div class="project-content">
+                        <h3>Text to Speech Converter</h3>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-animation="animate__zoomIn" data-project="ai-image-generator">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="AI Image Generator">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Image Generator</h3>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-animation="animate__zoomIn" data-project="luxury-fashion">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Luxury Fashion Brand">
+                    </div>
+                    <div class="project-content">
+                        <h3>Luxury Fashion Brand</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav projects-nav">
+                <div class="carousel-dots projects-dots"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact fade-in">
+        <div class="container">
+            <h2 class="animate-on-scroll" data-animation="animate__fadeInUp">Contact.</h2>
+            <p class="contact-intro animate-on-scroll" data-animation="animate__fadeIn">Interested in working together? Feel free to reach out. I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+            <div class="contact-content">
+                <div class="contact-options animate-on-scroll" data-animation="animate__fadeInUp">
+                    <div class="contact-option">
+                        <a href="https://wa.me/923277153783" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <p class="contact-info">+92 3277153783</p>
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="animate-on-scroll" data-animation="animate__fadeInUp">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="form-status"></div>
+                <div class="social-links animate-on-scroll" data-animation="animate__fadeInUp">
+                    <a href="https://github.com/iam-muzzamil" target="_blank" class="animate__animated animate__pulse animate__infinite animate__slower"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammad-muzzamil-anwaar-57a0402aa/" target="_blank" class="animate__animated animate__pulse animate__infinite animate__slower" style="animation-delay: 0.5s"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/gembriamemer" target="_blank" class="animate__animated animate__pulse animate__infinite animate__slower" style="animation-delay: 1s"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/923277153783" target="_blank" class="animate__animated animate__pulse animate__infinite animate__slower" style="animation-delay: 1.5s"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="animated-bg"></div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Muzzamil Anwar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
